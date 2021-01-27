@@ -28,3 +28,11 @@ end
 def find_a(array)
   array.select  {|word| word.start_with?("a")}
 end
+
+def sum_array(array)
+  array.inject(0) {|sum, num| sum + num}
+end
+
+def add_s(array)
+  array.each_with_index.map {|e, i| i == 1 ? e : e + "s"}
+end
